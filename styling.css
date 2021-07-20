@@ -1,0 +1,677 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+}
+
+/* *************************** landing-section styling ******************* */
+
+#landing-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    min-height: 100vh;
+    color: #FC427B;
+}
+
+#name{
+    font-family:'Sacramento',cursive !important;
+    text-transform:none;
+    font-weight:400;
+    font-size: 7rem;
+}
+
+#head-text{
+    padding-left:0;
+    padding-right: 10%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#landing-section div h2{
+    margin-top: 0rem;
+    text-align: center;
+    font-size: 2.3rem;
+    color: #182C61;
+}
+
+#landing-section div h1{
+    font-size: 3.3rem;
+    color:#FC427B;
+}
+
+#landing-section i{
+    font-size: 3rem;
+}
+
+#code-svg{
+    /* margin-top: 13rem; */
+    /* height:60%; */
+    width: 50%;
+    height: 100vh;
+    /* border-radius: 30%; */
+    /* box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22); */
+}
+
+#animating-text{
+    color:#FC427B;
+    font-size: 3rem;
+    animation: changing-width 10s infinite;
+}
+
+#animating-text::after{
+    content: '';
+    animation: changing-text 10s infinite;
+}
+
+@keyframes changing-width{
+    0% {
+        transform: scale(0);
+    }
+    10%{
+        transform: scale(1.5);
+    }
+    20%{
+        transform: scale(0.2);
+    }
+    30%{
+        transform: scale(1.5);
+    }
+    40%{
+        transform: scale(0.2);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    60%{
+        transform: scale(0.2);
+    }
+    70%{
+        transform: scale(1.5);
+    }
+    80%{
+        transform: scale(0.2);
+    }
+    90%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(0.2);
+    }
+}
+
+@keyframes changing-text{
+    0% {
+        content:'Coding';
+    }
+    20%{
+        content:'Coding';
+    }
+    21%{
+        content:'Dancing';
+    }
+    40%{
+        content: 'Dancing';
+    }
+    41%{
+        content:'Learning';
+    }
+    60%{
+        content: 'Learning';
+    }
+    61%{
+        content:'Sports';
+    }
+    80%{
+        content: 'Sports';
+    }
+    81%{
+        content:'Maths Puzzle';
+    }        
+    100%{
+        content: 'Maths Puzzle';
+    }
+}
+
+/* *************************** skill-section styling ******************* */
+
+#skills-outer{
+    border-radius: 10rem 0 0 0;
+    background-color: #55E6C1;
+}
+
+#skills{
+    min-height: 95vh;
+    border-radius: 10rem 0;
+    padding-top:2rem;
+    padding-bottom: 4rem;
+    text-align: center;
+    background-color: #F8EFBA;
+}
+#skills h1{
+    /* font-family:'Sacramento',cursive !important; */
+    color: #182C61;
+    font-size:3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+#skill-list{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+#skill-list ul{
+    color: #182C61;
+    width: 27%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+#skill-list ul li{
+    font-size: 1.2rem;
+    text-align: left;
+    padding: 1rem;
+    margin: 0.5rem;
+    color: black;
+    border-radius: 2rem;
+    background-color: whitesmoke;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    border-width: 0.5rem;
+}
+
+/* *************************** about-section styling ******************* */
+
+#about{
+    min-height: 100vh;
+    background-color: #55E6C1;
+    border-radius: 10rem 0 0 0;
+    text-align: center;
+}
+
+#education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#about h1{
+    color: #182C61;
+    margin-bottom: 5rem;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+#about-outer{
+    background-color: #F8EFBA;
+}
+
+#about{
+    padding: 2rem;
+}
+
+#education-img{
+    width: 50%;
+}
+
+#education-content{
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card ul{
+    list-style-type: none;
+    text-align: left;
+    padding: 0;
+}
+
+.card ul li{
+    margin:1rem;
+}
+
+.card .education-type{
+    text-emphasis: emphas;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.card{
+    width: 90%;
+    font-size: 1.4rem;
+    margin: 1.4rem;
+    margin-left:0;
+    background-color: #55E6C1;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    padding: 1.4rem;
+    border-radius: 5rem;
+    text-shadow: 1px 1px #2C3A47;
+}
+
+.card ul li span{
+    font-weight: 600;
+    float: right;
+    
+}
+
+#education-list{
+    list-style-type: none;
+}
+
+/* *************************** contact-section styling ******************* */
+
+#contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+    /* min-height: 60vh; */
+}
+
+#contact-left{
+    text-align: center;
+    margin: 3rem;
+    width: 30%;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contact-left ul{
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+#contact-left li{
+    display: inline;
+}
+
+#contact-left li img{
+    width: 40%;
+}
+
+#contact-right{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+    width: 25%;
+}
+
+#contact-img{
+    width: 80%;
+    min-height: 40vh;
+    border-radius: 4rem;
+}
+
+#download-icon{
+    font-size: 2.5rem;
+    color: #1B9CFC;
+}
+
+#full-name{
+    font-family:'Sacramento',cursive !important;
+    text-transform:none;
+    font-weight:400;
+    font-size: 2.5rem;
+    color: #2C3A47;
+    margin: 1rem;
+}
+
+/* *************************** footer-section styling ******************* */
+
+#footer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+#footer div{
+    color: #2C3A47;
+    width: 50%;
+}
+
+#footer img{
+    width: 100%;
+    margin: 0;
+}
+
+#footer div i{
+    color: red;
+}
+
+/* *************************** media-queries ******************* */
+
+@media screen and (max-width:1100px){
+    #animating-text{
+        font-size:1.6rem;
+    }
+    #landing-section i{
+        font-size: 1.6rem;
+    }
+    #landing-section div h1{
+        font-size: 1.9rem;
+    }
+    #landing-section div h2{
+        font-size: 1.4rem;
+    }
+    #head-text{
+        width: 35%;
+    }
+    #code-svg{
+        width: 55%;
+    }
+    #skills h1{
+        font-size: 2.5rem;
+    }
+    #skills ul li{
+        font-size: 1rem;
+    }
+    #about h1{
+        font-size: 2.5rem;
+    }
+    .card .education-type{
+        font-size: 1.3rem;
+    }
+    .card{
+        font-size: 1.3rem;
+    }
+    
+    #contact-left{
+        width: 40%;
+    }
+    #contact-right{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:1000px){
+    #name{
+        font-size: 5rem;
+    }
+    #animating-text{
+        font-size:1.4rem;
+    }
+    #landing-section i{
+        font-size: 1.4rem;
+    }
+    #landing-section div h1{
+        font-size: 1.7rem;
+    }
+    #landing-section div h2{
+        font-size: 1.2rem;
+    }
+    #head-text{
+        width: 30%;
+    }
+    #code-svg{
+        width: 60%;
+    }
+    .card .education-type{
+        font-size: 1.2rem;
+    }
+    .card{
+        font-size: 1.2rem;
+        padding: 1rem;
+        border-radius: 3rem;
+        margin:1rem;
+    } 
+    #footer{
+        margin-bottom: 0;
+        padding-bottom: 0;
+        height: auto;
+    }  
+    #footer div{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:850px){
+    #landing-section{
+        min-height: 95vh;
+    }
+    #name{
+        font-size: 4rem;
+    }
+    #head-text{
+        width: 30%;
+    }
+    #code-svg{
+        height: 90vh;
+        width: 60%;
+    }
+    #landing-section i{
+        font-size: 1.2rem;
+    }
+    #landing-section div h1{
+        font-size: 1.2rem;
+    }
+    #landing-section div h2{
+        font-size: 1rem;
+    }
+    #animating-text{
+        font-size:1.2rem;
+    }
+    #skills h1{
+        font-size: 2.5rem;
+    }
+    #skills ul li{
+        font-size: 1rem;
+    }
+    #about h1{
+        font-size: 2.5rem;
+    }
+    .card .education-type{
+        font-size: 1rem;
+    }
+    .card{
+        font-size: 1rem;
+    }
+    #contact{
+        padding: 0.3rem;
+    }
+}
+
+
+@media screen and (max-width:750px){
+
+    /* landing section */
+
+    #landing-section{
+        min-height: 95vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: center;
+        padding: 0 0.5rem;
+    }
+    #code-svg{
+        width: 100%;
+        height: auto;
+    }
+    #head-text{
+        width: 100%;
+        margin-bottom: 5rem;
+        padding: 0;
+    }
+    #name{
+        font-size: 5rem;
+    }
+    #landing-section i{
+        font-size: 2rem;
+    }
+    #landing-section div h1{
+        font-size: 2rem;
+    }
+    #landing-section div h2{
+        font-size: 1.7rem;
+    }
+    #animating-text{
+        font-size:2rem;
+    }
+
+    /* skill section */
+
+    #skill-list{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #skill-list ul {
+        padding: 0;
+        margin: auto;
+        width: 70%;
+    }
+
+    /* education section */
+
+    #education{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #education-img{
+        width: 100%;
+        margin: auto;
+    }
+
+    #education-content{
+        margin: 3rem auto;
+        width: 100%;
+    }
+
+    .card{
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+}
+
+@media screen and (max-width:550px){
+
+    /* landing section */
+
+    #landing-section{
+        min-height: 95vh;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0 0.3rem;
+        justify-content: center;
+        align-content: center;
+    }
+    #code-svg{
+        width: 100%;
+        height: auto;
+    }
+    #head-text{
+        margin-bottom: 5rem;
+        width: 100%;
+    }
+    #name{
+        font-size: 5rem;
+    }
+    #landing-section i{
+        font-size: 2rem;
+    }
+    #landing-section div h1{
+        font-size: 2rem;
+    }
+    #landing-section div h2{
+        font-size: 1.7rem;
+    }
+    #animating-text{
+        font-size:2.5rem;
+    }
+
+    /* skill section */
+
+    #skills h1{
+        margin: 2rem auto 0 auto;
+        padding: 0;
+    }
+
+    #skill-list{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #skill-list ul {
+        margin: auto;
+        margin-top: 2rem;
+        width: 90%;
+    }
+
+    #skills h1{
+        font-size: 2rem;
+    }
+
+    /* education section */
+
+    #about h1{
+        font-size: 2rem;
+    }
+
+    #about{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    #education{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+
+    #education-img{
+        width: 100%;
+        margin:auto 0;
+    }
+
+    #education-content{
+        margin: 3rem auto;
+        width: 100%;
+    }
+
+    .card{
+        width: 80%;
+        margin: 1rem auto;
+    }
+    #contact{
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    #contact-img{
+        width: 70%;
+    }
+    #contact-left{
+        order: 2;
+        width: 90%;
+        padding: 0;
+        margin: 2rem auto;
+    }
+    #contact-right{
+        order: 1;
+        width: 90%;
+    }
+}
